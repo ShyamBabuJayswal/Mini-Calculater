@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+       
+</head>
+<body>
+    <body>
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="button-container">
+                <div class="row">
+                    <button class="number" onclick="appendToDisplay(7)">7</button>
+                    <button class="number" onclick="appendToDisplay(8)">8</button>
+                    <button class="number" onclick="appendToDisplay(9)">9</button>
+                    <button style="background-color:rgba(100, 114, 153, 1);color: white;" class="operator" onclick="deleteLastCharacter()">Del</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="appendToDisplay(4)">4</button>
+                    <button class="number" onclick="appendToDisplay(5)">5</button>
+                    <button class="number" onclick="appendToDisplay(6)">6</button>
+                    <button class="operator" onclick="appendToDisplay('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="appendToDisplay(1)">1</button>
+                    <button class="number" onclick="appendToDisplay(2)">2</button>
+                    <button class="number" onclick="appendToDisplay(3)">3</button>
+                    <button class="operator" onclick="appendToDisplay('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="number" onclick="appendToDisplay('.')">.</button>
+                    <button class="number" onclick="appendToDisplay(0)">0</button>
+                    <button class="operator" onclick="appendToDisplay('/')">/</button>
+                    <button class="operator" onclick="appendToDisplay('*')">X</button>
+                </div>
+                <div class="row reset-calculate">
+                    <button class="reset" onclick="resetDisplay()">Reset</button>
+                    <button  style="background-color:red;" class="calculate" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+       <script src="script.js"></script>
+</body>
+</html>
